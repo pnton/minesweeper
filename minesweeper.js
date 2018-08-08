@@ -77,6 +77,8 @@ class Board {
     return numberOfBombs;
   }
 
+  // Checks the number of tiles on the board versus the number of bombs on the board.
+  // If these two values are equal, then the player has won the game.
   hasNonBombEmptySpaces() {
     return this._numberOfEmptySpaces !== this._numberOfBombs;
   }
